@@ -275,9 +275,6 @@
                                     "type": "integer"
                                 },
                                 "name": {
-                                    "maxLength": 255,
-                                    "minLength": 1,
-                                    "pattern": "^[a-z]+$",
                                     "type": "string"
                                 }
                             },
