@@ -231,7 +231,7 @@
                             "name": {
                                 "maxLength": 255,
                                 "minLength": 1,
-                                "pattern": "^[a-z]+$",
+                                "pattern": "^[a-zA-Z]+$",
                                 "type": "string"
                             }
                         },
