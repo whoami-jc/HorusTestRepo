@@ -163,6 +163,21 @@
                     }
                 }
             }
+        },
+        "/health": {
+            "get": {
+                "responses": {}
+            }
+        },
+        "/entries": {
+            "get": {
+                "responses": {}
+            }
+        },
+        "/categories": {
+            "get": {
+                "responses": {}
+            }
         }
     },
     "components": {
@@ -298,5 +313,10 @@
                 "type": "object"
             }
         }
-    }
+    },
+    "servers": [
+        {
+            "url": "https://qewqwe"
+        }
+    ]
 }
