@@ -163,6 +163,84 @@
                     }
                 }
             }
+        },
+        "/api/user/register1": {
+            "post": {
+                "responses": {
+                    "400": {
+                        "description": "400 response"
+                    },
+                    "default": {
+                        "content": {},
+                        "description": "Default response"
+                    }
+                },
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "x-request-id",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "in": "header",
+                        "name": "x-real-ip",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "in": "header",
+                        "name": "x-forwarded-for",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "in": "header",
+                        "name": "x-forwarded-host",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "in": "header",
+                        "name": "x-forwarded-port",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "in": "header",
+                        "name": "x-forwarded-proto",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "in": "header",
+                        "name": "x-forwarded-scheme",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "in": "header",
+                        "name": "x-scheme",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "in": "header",
+                        "name": "x-access-token",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ]
+            }
         }
     },
     "components": {
@@ -298,5 +376,10 @@
                 "type": "object"
             }
         }
-    }
+    },
+    "servers": [
+        {
+            "url": "https://api.openweathermap.org"
+        }
+    ]
 }
