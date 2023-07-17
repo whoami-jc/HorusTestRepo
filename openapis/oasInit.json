@@ -6,7 +6,7 @@
         "version": "1.0"
     },
     "paths": {
-        "/v2/pet/foo": {
+        "/v2/pet/foo1": {
             "post": {
                 "parameters": [],
                 "requestBody": {
